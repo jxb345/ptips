@@ -1,8 +1,13 @@
 const express = require('express');
 const app = express();
+const port = 5000;
 
-app.get('/', (req, res) => {
-  console.log('.get')
+app.use(express.static('dist'));
+
+// app.get('/', (req, res) => {
+//   res.send('yo')
+// })
+
+app.listen(port, () => {
+  console.log('listening on 5000')
 })
-
-app.listen(3000)
