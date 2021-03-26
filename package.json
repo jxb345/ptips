@@ -1,0 +1,19 @@
+{
+  "name": "ptips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxb345/ptips.git"
+  },
+  "author": "J Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jxb345/ptips/issues"
+  },
+  "homepage": "https://github.com/jxb345/ptips#readme"
+}
