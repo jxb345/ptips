@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,13 @@
   },
   "homepage": "https://github.com/jxb345/ptips#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "webpack": "^5.28.0"
+    "@babel/preset-react": "^7.12.13",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0"
   }
 }
