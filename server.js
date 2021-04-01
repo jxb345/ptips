@@ -1,13 +1,12 @@
-const express = require('express');
-const app = express();
-const port = 5000;
-
-app.use(express.static("dist"));
-
-app.get('/home', (req, res) => {
-  res.send('djkj')
+const fastify = require('fastify')({
+  logger: true
 })
 
-app.listen(port, () => {
-  console.log('listening on 5000')
+fastify.get('/', (request, reply) => {
+  reply.send({ hello: 'world'})
+})
+
+fastify.listen(5000, (err, address) => {
+  if (err) throw err
+  fastify.log.info(`server listening on ${address}`)
 })
