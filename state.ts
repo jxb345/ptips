@@ -91,7 +91,7 @@ class EntriesStore {
     // edit user
   }
 
-  load(allEntries: Entry[]) {
+  loadEntry(allEntries: Entry[]) {
     this.entries = allEntries;
   }
 
@@ -104,3 +104,27 @@ interface EntriesState {
 }
 
 let tag: [string, number] = ['', 0];
+
+
+// save entry
+ // if no id, then create
+ // otherwise, update
+
+const ENTRY_LOAD = 'Entry load';
+
+ const entriesReducer = (state: EntriesState, action) => {
+
+  switch(action.type) {
+    case( ENTRY_LOAD):
+      return loadEntry(state, action.payload)
+    // case
+      // return
+     // case
+      // return
+  }
+}
+
+ interface Action {
+   type: string;
+   payload?: string;
+ }
